@@ -17,4 +17,5 @@ List the sizes of the files f1 and f2 using ls –l and explain the difference.
 2.Implement  dup()  and  dup2()  using  fcntl()  and,   where  necessary,  close().(You   may     ignore   the   fact   that  dup2()  and  fcntl()  return   different  errnovalues for some error cases.) For dup2(), remember to handle the specialcase   where  oldfd  equals  newfd.   In   this   case,   you   should   check   whetheroldfd  is valid, which can be done by, for example, checking if  fcntl(oldfd,F_GETFL) succeeds. If oldfd is not valid, then the function should return –1with errno set to EBADF.
 #
 #
-3. Write a program to verify that duplicated file descriptors share a fileoffset value and open file  
+3. Write a program to verify that duplicated file descriptors share a fileoffset value and open file
+<img src="screenshots/part1-1.png">
