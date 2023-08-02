@@ -12,7 +12,7 @@
 #
 ## Command Tests:
 
-### “ls” and “ls | sort | grep” commands work correctly and also “:q” exits program.
+### “ls” and “ls | sort | grep” commands work correctly and also “:q” exits program
 
 <img src="screenshots/Picture1.png">
 
