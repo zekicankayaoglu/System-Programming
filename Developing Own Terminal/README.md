@@ -14,28 +14,28 @@
 
 ### “ls” and “ls | sort | grep” commands work correctly and also “:q” exits program.
 
-pic1
+<img src="screenshots/Picture1.png">
 
 ### “whoami | wc -c” output:
 
-pic2
+<img src="screenshots/Picture2.png">
 
 ### “cat < input.txt” | “grep h” output:
 
-pic3
+<img src="screenshots/Picture3.png">
 
 ### “cat < input.txt” | “sort” | “grep s > output.txt” output:
 
-pic4
+<img src="screenshots/Picture4.png">
 
 ### “ls | grep .c | sort | tee output.txt” output:
 
-pic5
+<img src="screenshots/Picture5.png">
 
 ## Signal Tests:
 
-pic6
+<img src="screenshots/Picture6.png">
 
 ## Memory Leak Test:
 
-pic7
+<img src="screenshots/Picture7.png">
