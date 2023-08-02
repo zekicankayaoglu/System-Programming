@@ -33,26 +33,26 @@ Firstly you must compile programs with ‘make’ then:
 ## Part 1:
 You can see how to compile codes. Make compiles them and you can run first part as in that image.
 
-<img src="screenshots/Picture1.png">
+<img src="screenshots/Picture1.jpg">
 
 -In this first test, program writes 1000000 bytes to part1.txt and if I run it one more time, it writes 1000000 bytes more to this file. Finally there are 2m bytes in part1.txt
 
-<img src="screenshots/Picture2.png">
+<img src="screenshots/Picture2.jpg">
 
 -In this test there is not ‘x’ in command line so program writes bytes sequentially. First operation done writing to file then other operation starts to writing so at the end there are 2 million bytes becomes in file. There is no conflict.
 
-<img src="screenshots/Picture3.png">
+<img src="screenshots/Picture3.jpg">
 
 -In these tests, I use ‘x’ in command line and run same file name at the same time with 1000000 bytes. As you see there are 1000008 bytes but why not 2m ?
 Because in x commands the program use ‘lseek’. And two writing operation try to do writing at the same time same place. So here both write operations may conflict and therefore the byte may not be written. So the byte number can be between 1 – 2 million.As you see in my test one of them 100008 and other is 1000000 bytes. So according to these test my program works corretly.
 
 ## Part 2:
 
-<img src="screenshots/Picture4.png">
+<img src="screenshots/Picture4.jpg">
 
 -In this test firstly, 3 file creating and then use dup and dup2 functions for them. Then prints fd values of these copy files and other files. And writes something to the copies. Let’s see the output now.
 
-<img src="screenshots/Picture5.png">
+<img src="screenshots/Picture5.jpg">
 
 -	Fd values: Dup: copy2(duplicated from fd3) ‘s value is different from fd3 because it is duplicated. It is 1 bigger than fd3. 
 - Dup2: As you see fd1 was oldfd and fd2 is newfd so the copy fd is same as fd2 and different from fd1(oldfd). As we expected.
@@ -63,12 +63,12 @@ Because in x commands the program use ‘lseek’. And two writing operation try
 
 ## Part 3:
 
-<img src="screenshots/Picture6.png">
+<img src="screenshots/Picture6.jpg">
 
 -In this test firstly I create a file and I duplicate it as duplicated with dup function. First prints their offset values, then writes something to oldfd and then try to read two file to check are they same and then returns their getfl values to check are they same.
 Let’s see the output results:
 
-<img src="screenshots/Picture7.png">
+<img src="screenshots/Picture7.jpg">
 
 -As you see, both offset values are 5 as we expected. After writing “hello again” to fd then we check offsets one more and they are same again.
 
