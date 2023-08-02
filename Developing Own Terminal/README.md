@@ -38,4 +38,4 @@
 
 ## Memory Leak Test:
 
-<img src="screenshots/Picture8.png" width="300">
+<img src="screenshots/Picture8.png" width="500">
