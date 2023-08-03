@@ -10,7 +10,7 @@ The project should be implemented as a server side and a client-side programs
 The Server side would enter the specified directory (createdirname if the dirname does not exits),create  a  log  file  for  the  clients  and  prompt  its  PID  for  the  clients  to  connect.  The  for  each  clientconnected will fork a copy of itself in order to serve the specified client (commands are given on theclient  side).If  a  kill  signal  is  generated  (either  by  Ctrl-C  or  from  a  client  side  request)  Server  isexpected to display the request, send kill signals to its child processes, ensure the log file is createdproperlyandexit.
 
 An example of the Server screen output might be in the following form:
-Serverside
+<img src="screenshots/serverside.png">
 
 ### Client side:
 - biboClient<Connect/tryConnect>ServerPID
@@ -18,8 +18,17 @@ Serverside
 
 When connected the client can performthefollowing requests :
 
-commands
+<img src="screenshots/commands.png">
 An example of the Client screen output might be in the following form:
-clientside
+<img src="screenshots/clientside.png">
 
-## Tests and Results
+<img src="screenshots/test1.png">
+<img src="screenshots/test2.png">
+<img src="screenshots/test3.png">
+<img src="screenshots/test4.png">
+<img src="screenshots/test5.png">
+<img src="screenshots/test6.png">
+<img src="screenshots/test7.png">
+<img src="screenshots/test8.png">
+
+
