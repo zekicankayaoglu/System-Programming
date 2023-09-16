@@ -18,7 +18,7 @@ An example call from the client might be in the following format:
 
 where dirName is the name of the directory on server side and portnumber is the connection port of the serverNote that the client should return with a proper message when the server is,and server should prompt a message when a client connection is accepted (with the address of connection) to the screen.
 
-part1
+<img src="Screenshots/part1>
 
 part2
 
